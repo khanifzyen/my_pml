@@ -1,16 +1,12 @@
 # my_pml
 
-A new Flutter project.
+Starter Flutter project with auth feature. Built with appwrite and riverpod.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. clone or fork this project: `git clone https://github.com/khanifzyen/my_pml`
+2. get packages: `dart pub get`
+3. update latest package version: `dart pub upgrade`
+4. run code generator for freezed and riverpod_generator `dart run build_runner build`
+5. copy `assets/.env.example` to `assets/.env`, and edit the desired configuration
+6. run without debugging and enjoy.

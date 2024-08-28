@@ -83,7 +83,7 @@
       "containerId": "f3pHuoxZuyuvGUTtHYBX4",
       "originalText": "arsitektur aplikasi\n(struktur folder)",
       "lineHeight": 1.25,
-      "baseline": 44
+      "baseline": 43
     },
     {
       "type": "rectangle",
@@ -157,7 +157,7 @@
       "containerId": "pG9UNJtvf68yU3fCdyeLn",
       "originalText": "MVC (web)",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -231,7 +231,7 @@
       "containerId": "lJpD2y_5SeV_lmr8QnYjE",
       "originalText": "MVVM (kotlin)",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -457,7 +457,7 @@
       "containerId": "taHcxAESNeLBT0Gl9rq9Y",
       "originalText": "clean architecture (popular)",
       "lineHeight": 1.25,
-      "baseline": 69
+      "baseline": 68
     },
     {
       "type": "arrow",
@@ -583,7 +583,7 @@
       "containerId": "y17JUEigWdY8pjNnOOxWO",
       "originalText": "custom\n(tanya AI)",
       "lineHeight": 1.25,
-      "baseline": 44
+      "baseline": 43
     },
     {
       "type": "line",
@@ -823,7 +823,7 @@
       "containerId": "28ntd_XiMfdmZ56WJN-ox",
       "originalText": "AI Assistant",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -953,7 +953,7 @@
       "containerId": "-IeSFkaV00mSAiXhRshtS",
       "originalText": "Chatgpt",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -1083,7 +1083,7 @@
       "containerId": "WCG-ZtKMZ5R9tft_FHK8G",
       "originalText": "claude",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -1139,8 +1139,8 @@
     },
     {
       "type": "text",
-      "version": 173,
-      "versionNonce": 96368946,
+      "version": 174,
+      "versionNonce": 25566240,
       "isDeleted": false,
       "id": "U1TJTPJ81QE1UnflEKJLH",
       "fillStyle": "solid",
@@ -1165,7 +1165,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1724843077534,
+      "updated": 1724879941591,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1176,7 +1176,7 @@
       "containerId": null,
       "originalText": "untuk deskripsi, penjelasan, ide konsep\n(analisis/konsultan)",
       "lineHeight": 1.25,
-      "baseline": 43
+      "baseline": 42
     },
     {
       "type": "arrow",
@@ -1232,8 +1232,8 @@
     },
     {
       "type": "text",
-      "version": 269,
-      "versionNonce": 375810798,
+      "version": 270,
+      "versionNonce": 1452357088,
       "isDeleted": false,
       "id": "8f5xTJ70WZSH3O4zPP7eJ",
       "fillStyle": "solid",
@@ -1258,7 +1258,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1724843077535,
+      "updated": 1724879941591,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1269,7 +1269,7 @@
       "containerId": null,
       "originalText": "coding, bugfixing (programmer)",
       "lineHeight": 1.25,
-      "baseline": 18
+      "baseline": 17
     },
     {
       "type": "rectangle",
@@ -1473,7 +1473,7 @@
       "containerId": "H0aFo9OHJ7B-_EJdYa4P8",
       "originalText": "dependency:\n  flutter_riverpod\n  riverpod_annotation\n  freezed_annotation  json_annotation\nflutter_dotenv",
       "lineHeight": 1.25,
-      "baseline": 144
+      "baseline": 143
     },
     {
       "type": "rectangle",
@@ -1673,7 +1673,7 @@
       "containerId": "rg0VciD_qUaW8A7Wygmh2",
       "originalText": "- result.dart\n- custom showDialog for error/success",
       "lineHeight": 1.25,
-      "baseline": 69
+      "baseline": 68
     },
     {
       "type": "rectangle",
@@ -1873,7 +1873,7 @@
       "containerId": "4xZXy1TkqdrStP0C8Tkk-",
       "originalText": "- appwrite\n- firebase\n- supabase\n- pocketbase\n- laravel",
       "lineHeight": 1.25,
-      "baseline": 119
+      "baseline": 118
     },
     {
       "type": "line",
@@ -1965,8 +1965,8 @@
     },
     {
       "type": "text",
-      "version": 843,
-      "versionNonce": 968655602,
+      "version": 844,
+      "versionNonce": 2125305888,
       "isDeleted": false,
       "id": "NIc8kYLgcrKGnzIS3dA5k",
       "fillStyle": "solid",
@@ -1986,7 +1986,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724843077535,
+      "updated": 1724879941591,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1997,7 +1997,7 @@
       "containerId": null,
       "originalText": "baca dokumentasi resmi (WAJIB)\nAI pasti pakai versi lama",
       "lineHeight": 1.25,
-      "baseline": 43
+      "baseline": 42
     },
     {
       "type": "rectangle",
@@ -2071,7 +2071,7 @@
       "containerId": "NKqazSNXO0ldEHPw9syWo",
       "originalText": "prompt (chatgpt): \nbuatkan struktur folder untuk project flutter yang paling mudah untuk dipahami seorang pemula",
       "lineHeight": 1.25,
-      "baseline": 94
+      "baseline": 93
     },
     {
       "type": "arrow",
@@ -2423,8 +2423,8 @@
     },
     {
       "type": "text",
-      "version": 178,
-      "versionNonce": 813096238,
+      "version": 179,
+      "versionNonce": 1051687392,
       "isDeleted": false,
       "id": "QRi8AeR0O4UPdDunr-DD0",
       "fillStyle": "solid",
@@ -2444,7 +2444,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724843077535,
+      "updated": 1724879941592,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2455,12 +2455,12 @@
       "containerId": null,
       "originalText": "1. claude merespon next step karena tidak semua bisa direspon sekali jawab",
       "lineHeight": 1.25,
-      "baseline": 18
+      "baseline": 17
     },
     {
       "type": "text",
-      "version": 496,
-      "versionNonce": 1401749486,
+      "version": 497,
+      "versionNonce": 1636144160,
       "isDeleted": false,
       "id": "MHNikhQX_L-QpA8Uxhsbb",
       "fillStyle": "solid",
@@ -2480,7 +2480,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724856499902,
+      "updated": 1724879941594,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2491,7 +2491,7 @@
       "containerId": null,
       "originalText": "2. baca dokumentasi untuk mulai copy paste respon ke vs code (WAJIB)\ncontoh: \n- penggunaan package versi terbaru\n- best practise/how to (docs di pub.dev)\n- method yang deprecated ",
       "lineHeight": 1.25,
-      "baseline": 118
+      "baseline": 117
     },
     {
       "type": "rectangle",
@@ -2561,7 +2561,7 @@
       "containerId": "T5riUpNKZItah_ZerzhDS",
       "originalText": "prompt:\n\nsaya ada file models/result.dart\n...\nganti kode yang sesuai dengan menggunakan result.",
       "lineHeight": 1.25,
-      "baseline": 144
+      "baseline": 143
     },
     {
       "type": "rectangle",
@@ -2631,7 +2631,7 @@
       "containerId": "lNSgu2Qw3vXZ2mHYkz0tR",
       "originalText": "prompt:\n\nbuatkan fitur user profile, untuk data apa saja yang masuk, berikan rekomendasi.",
       "lineHeight": 1.25,
-      "baseline": 119
+      "baseline": 118
     },
     {
       "type": "rectangle",
@@ -2701,7 +2701,7 @@
       "containerId": "sD-D4N5HL-20aNMfLGBKk",
       "originalText": "prompt:\n\nuntuk user model saya tetap ingin class user seperti biasa, yaitu id, email, name. Sedangkan untuk user profile, pisahkan ke class user profile dengan property-property yang ada. Jadi buatkan service baru untuk create document, update document untuk user profile.",
       "lineHeight": 1.25,
-      "baseline": 169
+      "baseline": 168
     },
     {
       "type": "rectangle",
@@ -2775,7 +2775,7 @@
       "containerId": "M_aqVvsphswjZVrDnfgbc",
       "originalText": "dev dependency:\n  riverpod_generator\n  build_runner\ncustom_lint\n  riverpod_lint\n  json_serializable",
       "lineHeight": 1.25,
-      "baseline": 144
+      "baseline": 143
     },
     {
       "type": "arrow",
@@ -2874,44 +2874,33 @@
       ]
     },
     {
-      "id": "p86Vxv2dthVbm4f0JR_4_",
       "type": "arrow",
-      "x": 1163.660208401708,
-      "y": 249.24487219813184,
-      "width": 121.92557120166703,
-      "height": 2.6272267617594025,
-      "angle": 0,
-      "strokeColor": "#e03131",
-      "backgroundColor": "transparent",
+      "version": 323,
+      "versionNonce": 1520027246,
+      "isDeleted": false,
+      "id": "p86Vxv2dthVbm4f0JR_4_",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
       "opacity": 100,
+      "angle": 0,
+      "x": 1163.660208401708,
+      "y": 249.24487219813184,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "width": 121.92557120166703,
+      "height": 2.6272267617594025,
+      "seed": 548007538,
       "groupIds": [],
       "frameId": null,
       "roundness": {
         "type": 2
       },
-      "seed": 548007538,
-      "version": 323,
-      "versionNonce": 1520027246,
-      "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1724856422376,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          121.92557120166703,
-          2.6272267617594025
-        ]
-      ],
-      "lastCommittedPoint": null,
       "startBinding": {
         "elementId": "ttNne87u4Y2q-jCRqtAE8",
         "focus": -0.08790781357987423,
@@ -2922,8 +2911,19 @@
         "focus": -0.09896449090149455,
         "gap": 15.41286574034416
       },
+      "lastCommittedPoint": null,
       "startArrowhead": null,
-      "endArrowhead": "arrow"
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          121.92557120166703,
+          2.6272267617594025
+        ]
+      ]
     },
     {
       "type": "rectangle",
@@ -3000,40 +3000,40 @@
       "baseline": 218
     },
     {
-      "id": "7IxrrH6Gt4h6fFc-O9GyU",
       "type": "text",
-      "x": 172.92785269444116,
-      "y": 1735.4324970031107,
-      "width": 302.2332763671875,
-      "height": 35,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
+      "version": 232,
+      "versionNonce": 308624864,
+      "isDeleted": false,
+      "id": "7IxrrH6Gt4h6fFc-O9GyU",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 1,
       "opacity": 100,
+      "angle": 0,
+      "x": 172.92785269444116,
+      "y": 1735.4324970031107,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 302.2332763671875,
+      "height": 35,
+      "seed": 864764974,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
-      "seed": 864764974,
-      "version": 231,
-      "versionNonce": 574848498,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1724856636110,
+      "boundElements": [],
+      "updated": 1724879941594,
       "link": null,
       "locked": false,
-      "text": "Skill Wajib Programmer",
       "fontSize": 28,
       "fontFamily": 1,
+      "text": "Skill Wajib Programmer",
       "textAlign": "left",
       "verticalAlign": "top",
-      "baseline": 25,
       "containerId": null,
       "originalText": "Skill Wajib Programmer",
-      "lineHeight": 1.25
+      "lineHeight": 1.25,
+      "baseline": 23
     }
   ],
   "appState": {
