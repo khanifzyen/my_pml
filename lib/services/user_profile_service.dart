@@ -4,18 +4,13 @@ import '../models/result.dart';
 import '../models/user_profile_model.dart';
 
 class UserProfileService {
-  late final Databases _databases;
+  late final Databases _db;
 
-  UserProfileService() {
-    final client = Client()
-      ..setEndpoint(dotenv.env['APPWRITE_ENDPOINT']!)
-      ..setProject(dotenv.env['APPWRITE_PROJECT_ID']!);
-    _databases = Databases(client);
-  }
+  UserProfileService({required Databases db}) : _db = db;
 
   Future<Result<UserProfile>> createUserProfile(UserProfile profile) async {
     try {
-      final document = await _databases.createDocument(
+      final document = await _db.createDocument(
         databaseId: dotenv.env['APPWRITE_DATABASE_ID']!,
         collectionId: dotenv.env['APPWRITE_USER_PROFILE_COLLECTION_ID']!,
         documentId: profile.userId,
@@ -29,7 +24,7 @@ class UserProfileService {
 
   Future<Result<UserProfile>> getUserProfile(String userId) async {
     try {
-      final document = await _databases.getDocument(
+      final document = await _db.getDocument(
         databaseId: dotenv.env['APPWRITE_DATABASE_ID']!,
         collectionId: dotenv.env['APPWRITE_USER_PROFILE_COLLECTION_ID']!,
         documentId: userId,
@@ -42,7 +37,7 @@ class UserProfileService {
 
   Future<Result<UserProfile>> updateUserProfile(UserProfile profile) async {
     try {
-      final document = await _databases.updateDocument(
+      final document = await _db.updateDocument(
         databaseId: dotenv.env['APPWRITE_DATABASE_ID']!,
         collectionId: dotenv.env['APPWRITE_USER_PROFILE_COLLECTION_ID']!,
         documentId: profile.userId,

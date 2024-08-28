@@ -20,43 +20,45 @@ class RegisterScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Register')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextField(
-              controller: _nameController,
-              decoration: const InputDecoration(labelText: 'Name'),
-            ),
-            const SizedBox(height: 16),
-            TextField(
-              controller: _emailController,
-              decoration: const InputDecoration(labelText: 'Email'),
-              keyboardType: TextInputType.emailAddress,
-            ),
-            const SizedBox(height: 16),
-            TextField(
-              controller: _passwordController,
-              decoration: const InputDecoration(labelText: 'Password'),
-              obscureText: true,
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: () {
-                ref.read(authProvider.notifier).register(
-                      _emailController.text,
-                      _passwordController.text,
-                      _nameController.text,
-                    );
-              },
-              child: const Text('Register'),
-            ),
-            TextButton(
-              onPressed: () => context.go('/login'),
-              child: const Text('Already have an account? Login'),
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: _nameController,
+                decoration: const InputDecoration(labelText: 'Name'),
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: _emailController,
+                decoration: const InputDecoration(labelText: 'Email'),
+                keyboardType: TextInputType.emailAddress,
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: _passwordController,
+                decoration: const InputDecoration(labelText: 'Password'),
+                obscureText: true,
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () {
+                  ref.read(authProvider.notifier).register(
+                        _emailController.text,
+                        _passwordController.text,
+                        _nameController.text,
+                      );
+                },
+                child: const Text('Register'),
+              ),
+              TextButton(
+                onPressed: () => context.go('/login'),
+                child: const Text('Already have an account? Login'),
+              ),
+            ],
+          ),
         ),
       ),
     );

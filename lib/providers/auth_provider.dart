@@ -1,12 +1,14 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../services/auth_service.dart';
 import '../models/user_model.dart';
+import '../utils/provider.dart';
 
 part 'auth_provider.g.dart';
 
 @riverpod
 class Auth extends _$Auth {
-  late final AuthService _authService = AuthService();
+  late final AuthService _authService =
+      AuthService(account: ref.read(appwriteAccountProvider));
 
   @override
   Future<User?> build() async {

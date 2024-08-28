@@ -1,12 +1,14 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../services/user_profile_service.dart';
 import '../models/user_profile_model.dart';
+import '../utils/provider.dart';
 
 part 'user_profile_provider.g.dart';
 
 @riverpod
 class UserProfileNotifier extends _$UserProfileNotifier {
-  late final UserProfileService _userProfileService = UserProfileService();
+  late final UserProfileService _userProfileService =
+      UserProfileService(db: ref.read(appwriteDatabaseProvider));
 
   @override
   Future<UserProfile?> build() async {
