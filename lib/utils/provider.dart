@@ -1,29 +1,36 @@
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:appwrite/appwrite.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final appwriteClientProvider = Provider((ref) {
-  Client client = Client();
-  return client
-      .setEndpoint(dotenv.env['APPWRITE_ENDPOINT']!)
-      .setProject(dotenv.env['APPWRITE_PROJECT_ID']!);
-});
+part 'provider.g.dart';
 
-final appwriteAccountProvider = Provider((ref) {
+@riverpod
+Client appwriteClient(AppwriteClientRef ref) {
+  return Client()
+    ..setEndpoint(dotenv.env['APPWRITE_ENDPOINT']!)
+    ..setProject(dotenv.env['APPWRITE_PROJECT_ID']!);
+}
+
+@riverpod
+Account appwriteAccount(AppwriteAccountRef ref) {
   final client = ref.watch(appwriteClientProvider);
   return Account(client);
-});
-final appwriteDatabaseProvider = Provider((ref) {
+}
+
+@riverpod
+Databases appwriteDatabase(AppwriteDatabaseRef ref) {
   final client = ref.watch(appwriteClientProvider);
   return Databases(client);
-});
+}
 
-final appwriteStorageProvider = Provider((ref) {
+@riverpod
+Storage appwriteStorage(AppwriteStorageRef ref) {
   final client = ref.watch(appwriteClientProvider);
   return Storage(client);
-});
+}
 
-final appwriteRealtimeProvider = Provider((ref) {
+@riverpod
+Realtime appwriteRealtime(AppwriteRealtimeRef ref) {
   final client = ref.watch(appwriteClientProvider);
   return Realtime(client);
-});
+}
