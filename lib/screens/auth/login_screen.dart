@@ -26,6 +26,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final authState = ref.watch(authProvider);
+
     ref.listen<AsyncValue>(authProvider, (_, state) {
       if (state.value != null) {
         context.go('/dashboard');
@@ -67,19 +69,27 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 ),
                 const SizedBox(height: 24),
                 ElevatedButton(
-                  onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      _formKey.currentState!.save();
-                      ref.read(authProvider.notifier).login(
-                            _emailController.text,
-                            _passwordController.text,
-                          );
-                    }
-                  },
+                  onPressed: authState.isLoading
+                      ? null
+                      : () {
+                          if (_formKey.currentState!.validate()) {
+                            _formKey.currentState!.save();
+                            ref.read(authProvider.notifier).login(
+                                  _emailController.text,
+                                  _passwordController.text,
+                                );
+                          }
+                        },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
-                  child: const Text('Login'),
+                  child: authState.isLoading
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(),
+                        )
+                      : const Text('Login'),
                 ),
                 const SizedBox(height: 16),
                 TextButton(

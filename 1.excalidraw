@@ -1139,8 +1139,8 @@
     },
     {
       "type": "text",
-      "version": 174,
-      "versionNonce": 25566240,
+      "version": 175,
+      "versionNonce": 1777039166,
       "isDeleted": false,
       "id": "U1TJTPJ81QE1UnflEKJLH",
       "fillStyle": "solid",
@@ -1165,7 +1165,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1724879941591,
+      "updated": 1724884862472,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1232,8 +1232,8 @@
     },
     {
       "type": "text",
-      "version": 270,
-      "versionNonce": 1452357088,
+      "version": 271,
+      "versionNonce": 370746274,
       "isDeleted": false,
       "id": "8f5xTJ70WZSH3O4zPP7eJ",
       "fillStyle": "solid",
@@ -1258,7 +1258,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1724879941591,
+      "updated": 1724884862473,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1551,8 +1551,8 @@
     },
     {
       "type": "arrow",
-      "version": 1724,
-      "versionNonce": 1437232238,
+      "version": 1836,
+      "versionNonce": 1709664290,
       "isDeleted": false,
       "id": "RWnu4kwBNbNlG-32MKsdP",
       "fillStyle": "solid",
@@ -1562,11 +1562,11 @@
       "opacity": 100,
       "angle": 0,
       "x": 562.5365210624083,
-      "y": 3175.071826880857,
+      "y": 3178.5903677365227,
       "strokeColor": "#e03131",
       "backgroundColor": "transparent",
-      "width": 152.03804023999055,
-      "height": 5.942239411509036,
+      "width": 152.12501533764691,
+      "height": 2.1640882418191723,
       "seed": 253455879,
       "groupIds": [],
       "frameId": null,
@@ -1574,7 +1574,7 @@
         "type": 2
       },
       "boundElements": [],
-      "updated": 1724856748460,
+      "updated": 1724884914004,
       "link": null,
       "locked": false,
       "startBinding": {
@@ -1596,15 +1596,15 @@
           0
         ],
         [
-          152.03804023999055,
-          -5.942239411509036
+          152.12501533764691,
+          -2.1640882418191723
         ]
       ]
     },
     {
       "type": "rectangle",
-      "version": 606,
-      "versionNonce": 1118172590,
+      "version": 660,
+      "versionNonce": 1787073762,
       "isDeleted": false,
       "id": "rg0VciD_qUaW8A7Wygmh2",
       "fillStyle": "solid",
@@ -1613,12 +1613,12 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": 728.1999314684128,
-      "y": 3127.518909968456,
+      "x": 728.2869065660691,
+      "y": 3126.3994946852526,
       "strokeColor": "#e03131",
       "backgroundColor": "transparent",
-      "width": 251.82293701171875,
-      "height": 85,
+      "width": 355.38012695312494,
+      "height": 110,
       "seed": 1430700935,
       "groupIds": [],
       "frameId": null,
@@ -1635,14 +1635,14 @@
           "type": "arrow"
         }
       ],
-      "updated": 1724856748460,
+      "updated": 1724884914004,
       "link": null,
       "locked": false
     },
     {
       "type": "text",
-      "version": 776,
-      "versionNonce": 704057326,
+      "version": 995,
+      "versionNonce": 649310910,
       "isDeleted": false,
       "id": "-OVDHNF6Eqy-YwYa82OvN",
       "fillStyle": "solid",
@@ -1651,29 +1651,29 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": 734.8115113634324,
-      "y": 3132.518909968456,
+      "x": 751.6971543688035,
+      "y": 3143.8994946852526,
       "strokeColor": "#e03131",
       "backgroundColor": "transparent",
-      "width": 238.5997772216797,
+      "width": 308.55963134765625,
       "height": 75,
       "seed": 1657977511,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724856748460,
+      "updated": 1724885208546,
       "link": null,
       "locked": false,
       "fontSize": 20,
       "fontFamily": 1,
-      "text": "- result.dart\n- custom showDialog for\nerror/success",
+      "text": "- result.dart\n- build_context_extension.dart\n- validation_helper.dart",
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": "rg0VciD_qUaW8A7Wygmh2",
-      "originalText": "- result.dart\n- custom showDialog for error/success",
+      "originalText": "- result.dart\n- build_context_extension.dart\n- validation_helper.dart",
       "lineHeight": 1.25,
-      "baseline": 68
+      "baseline": 67
     },
     {
       "type": "rectangle",
@@ -1965,8 +1965,8 @@
     },
     {
       "type": "text",
-      "version": 844,
-      "versionNonce": 2125305888,
+      "version": 845,
+      "versionNonce": 1312153470,
       "isDeleted": false,
       "id": "NIc8kYLgcrKGnzIS3dA5k",
       "fillStyle": "solid",
@@ -1986,7 +1986,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724879941591,
+      "updated": 1724884862474,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2423,8 +2423,8 @@
     },
     {
       "type": "text",
-      "version": 179,
-      "versionNonce": 1051687392,
+      "version": 180,
+      "versionNonce": 1077436258,
       "isDeleted": false,
       "id": "QRi8AeR0O4UPdDunr-DD0",
       "fillStyle": "solid",
@@ -2444,7 +2444,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724879941592,
+      "updated": 1724884862474,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2459,8 +2459,8 @@
     },
     {
       "type": "text",
-      "version": 497,
-      "versionNonce": 1636144160,
+      "version": 498,
+      "versionNonce": 1166622654,
       "isDeleted": false,
       "id": "MHNikhQX_L-QpA8Uxhsbb",
       "fillStyle": "solid",
@@ -2480,7 +2480,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724879941594,
+      "updated": 1724884862475,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2495,8 +2495,8 @@
     },
     {
       "type": "rectangle",
-      "version": 211,
-      "versionNonce": 615548839,
+      "version": 212,
+      "versionNonce": 616578978,
       "isDeleted": false,
       "id": "T5riUpNKZItah_ZerzhDS",
       "fillStyle": "solid",
@@ -2505,8 +2505,8 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": 296.52347688029397,
-      "y": 3342.874445762818,
+      "x": 296.91735708862734,
+      "y": 3342.3354799018157,
       "strokeColor": "#f08c00",
       "backgroundColor": "transparent",
       "width": 355.82601690188073,
@@ -2523,14 +2523,14 @@
           "id": "esEWkrap-VAPB54uBPMtb"
         }
       ],
-      "updated": 1722306916722,
+      "updated": 1724885273552,
       "link": null,
       "locked": false
     },
     {
       "type": "text",
-      "version": 256,
-      "versionNonce": 574253641,
+      "version": 257,
+      "versionNonce": 597424994,
       "isDeleted": false,
       "id": "esEWkrap-VAPB54uBPMtb",
       "fillStyle": "solid",
@@ -2539,8 +2539,8 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": 311.49662021892965,
-      "y": 3372.874445762818,
+      "x": 311.890500427263,
+      "y": 3372.3354799018157,
       "strokeColor": "#f08c00",
       "backgroundColor": "transparent",
       "width": 325.8797302246094,
@@ -2550,7 +2550,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1722306916722,
+      "updated": 1724885273552,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3001,8 +3001,8 @@
     },
     {
       "type": "text",
-      "version": 232,
-      "versionNonce": 308624864,
+      "version": 233,
+      "versionNonce": 578429730,
       "isDeleted": false,
       "id": "7IxrrH6Gt4h6fFc-O9GyU",
       "fillStyle": "solid",
@@ -3022,7 +3022,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1724879941594,
+      "updated": 1724884862477,
       "link": null,
       "locked": false,
       "fontSize": 28,
@@ -3034,6 +3034,433 @@
       "originalText": "Skill Wajib Programmer",
       "lineHeight": 1.25,
       "baseline": 23
+    },
+    {
+      "type": "rectangle",
+      "version": 279,
+      "versionNonce": 506953570,
+      "isDeleted": false,
+      "id": "1tZKkq70A5V4hBFIEWHBF",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 294.5069773656519,
+      "y": 3600.952109341594,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 355.82601690188073,
+      "height": 210,
+      "seed": 1361710142,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "iVUQXMia6LPh_Ecj-jLod"
+        },
+        {
+          "id": "V5iRyLZRiRa9t5NORGCRc",
+          "type": "arrow"
+        },
+        {
+          "id": "kmkZ0WfCwY5ra9Fisedbn",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1724885401328,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 326,
+      "versionNonce": 5344830,
+      "isDeleted": false,
+      "id": "iVUQXMia6LPh_Ecj-jLod",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 305.8001890636626,
+      "y": 3655.952109341594,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 333.2395935058594,
+      "height": 100,
+      "seed": 1524225150,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1724885293709,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "prompt:\n\nberikan contoh best practice \nvalidator form di flutter flutter?",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "1tZKkq70A5V4hBFIEWHBF",
+      "originalText": "prompt:\n\nberikan contoh best practice validator form di flutter flutter?",
+      "lineHeight": 1.25,
+      "baseline": 92
+    },
+    {
+      "type": "rectangle",
+      "version": 320,
+      "versionNonce": 327970786,
+      "isDeleted": false,
+      "id": "dRxVKxmWpBwJCs8QlXjaT",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 717.1147552790636,
+      "y": 3600.2182315554355,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 355.82601690188073,
+      "height": 235,
+      "seed": 1154580286,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "sT7_A3FVCdFdz2wBkQEHG"
+        },
+        {
+          "id": "kmkZ0WfCwY5ra9Fisedbn",
+          "type": "arrow"
+        },
+        {
+          "id": "SkmqOKsul4JJM3Z07_-bG",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1724885411472,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 370,
+      "versionNonce": 1524915582,
+      "isDeleted": false,
+      "id": "sT7_A3FVCdFdz2wBkQEHG",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 736.2379688081289,
+      "y": 3605.2182315554355,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 317.57958984375,
+      "height": 225,
+      "seed": 1864034174,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1724885330793,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "prompt:\n\nrefactoring kode sebelumnya \ndengan membuat helper untuk \nvalidator, untuk text isEmpty, \ndengan email farmat, dengan \nlength minimal dari parameter, \nsehingga bisa digunakan di form \nlain.",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "dRxVKxmWpBwJCs8QlXjaT",
+      "originalText": "prompt:\n\nrefactoring kode sebelumnya dengan membuat helper untuk validator, untuk text isEmpty, dengan email farmat, dengan length minimal dari parameter, sehingga bisa digunakan di form lain.",
+      "lineHeight": 1.25,
+      "baseline": 217
+    },
+    {
+      "type": "rectangle",
+      "version": 363,
+      "versionNonce": 1480023906,
+      "isDeleted": false,
+      "id": "TA_-luvsb4j6XVXyuRgmY",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 1149.2704152725528,
+      "y": 3596.831034696711,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 355.82601690188073,
+      "height": 235,
+      "seed": 1975920190,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "EN9U4QSLBYeDLzG-4lTz5"
+        },
+        {
+          "id": "SkmqOKsul4JJM3Z07_-bG",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1724885411472,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 420,
+      "versionNonce": 1889086754,
+      "isDeleted": false,
+      "id": "EN9U4QSLBYeDLzG-4lTz5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 1157.5036141531807,
+      "y": 3651.831034696711,
+      "strokeColor": "#f08c00",
+      "backgroundColor": "transparent",
+      "width": 339.359619140625,
+      "height": 125,
+      "seed": 149073534,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1724885367072,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "prompt:\n\nbagaimana jika satu textformfield\nlangsung sekaligus menggunakan 3 \nhelper?",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "TA_-luvsb4j6XVXyuRgmY",
+      "originalText": "prompt:\n\nbagaimana jika satu textformfield langsung sekaligus menggunakan 3 helper?",
+      "lineHeight": 1.25,
+      "baseline": 117
+    },
+    {
+      "id": "0avuWOLWgxUwC8WgjR3m5",
+      "type": "text",
+      "x": -49.55770583379797,
+      "y": 3680.479465187284,
+      "width": 216.35975646972656,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 1511702078,
+      "version": 44,
+      "versionNonce": 63820386,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "V5iRyLZRiRa9t5NORGCRc",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1724885386453,
+      "link": null,
+      "locked": false,
+      "text": "validation_helper.dart",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 17,
+      "containerId": null,
+      "originalText": "validation_helper.dart",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "V5iRyLZRiRa9t5NORGCRc",
+      "type": "arrow",
+      "x": 181.2673368908113,
+      "y": 3692.440575620227,
+      "width": 91.95688883463549,
+      "height": 0.7877095540366099,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 860682750,
+      "version": 74,
+      "versionNonce": 1743568126,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1724885393433,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          91.95688883463549,
+          0.7877095540366099
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "0avuWOLWgxUwC8WgjR3m5",
+        "focus": -0.11838202316442417,
+        "gap": 14.465286254882699
+      },
+      "endBinding": {
+        "elementId": "1tZKkq70A5V4hBFIEWHBF",
+        "focus": 0.10342736658488674,
+        "gap": 21.282751640205106
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "version": 180,
+      "versionNonce": 327744994,
+      "isDeleted": false,
+      "id": "kmkZ0WfCwY5ra9Fisedbn",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 660.7897194510687,
+      "y": 3702.0109464644015,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "width": 46.33087158203148,
+      "height": 1.0364786783857198,
+      "seed": 350270910,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1724885408044,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "1tZKkq70A5V4hBFIEWHBF",
+        "focus": -0.07483222544399297,
+        "gap": 10.456725183536037
+      },
+      "endBinding": {
+        "elementId": "dRxVKxmWpBwJCs8QlXjaT",
+        "focus": 0.08616298959090898,
+        "gap": 9.994164245963418
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46.33087158203148,
+          1.0364786783857198
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 235,
+      "versionNonce": 33039266,
+      "isDeleted": false,
+      "id": "SkmqOKsul4JJM3Z07_-bG",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 1087.1585404767932,
+      "y": 3701.8794307841717,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "width": 46.33087158203148,
+      "height": 1.0364786783857198,
+      "seed": 1189605758,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1724885411472,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "dRxVKxmWpBwJCs8QlXjaT",
+        "focus": -0.16576375435969845,
+        "gap": 14.217768295848884
+      },
+      "endBinding": {
+        "elementId": "TA_-luvsb4j6XVXyuRgmY",
+        "focus": 0.05829719946718397,
+        "gap": 15.781003213728127
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46.33087158203148,
+          1.0364786783857198
+        ]
+      ]
     }
   ],
   "appState": {
