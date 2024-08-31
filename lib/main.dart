@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'utils/router.dart';
+import 'utils/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,11 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = View.of(context).platformDispatcher.platformBrightness;
+    TextTheme textTheme = createTextTheme(context, "Adamina", "Philosopher");
+    MaterialTheme theme = MaterialTheme(textTheme);
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'My Flutter App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: brightness == Brightness.light ? theme.light() : theme.dark(),
       routerConfig: router,
     );
   }
