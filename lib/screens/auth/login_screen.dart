@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../providers/auth_provider.dart';
 import '../../utils/build_context_extension.dart';
 import '../../utils/validation_helper.dart';
+import '../../widgets/custom_text_field.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -59,22 +60,16 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                TextFormField(
+                CustomTextFormField(
                   controller: _emailController,
-                  decoration: const InputDecoration(
-                    labelText: 'Email',
-                    border: OutlineInputBorder(),
-                  ),
+                  labelText: 'Email',
                   keyboardType: TextInputType.emailAddress,
                   validator: (value) => ValidationHelper.validateEmail(value),
                 ),
                 const SizedBox(height: 16),
-                TextFormField(
+                CustomTextFormField(
                   controller: _passwordController,
-                  decoration: const InputDecoration(
-                    labelText: 'Password',
-                    border: OutlineInputBorder(),
-                  ),
+                  labelText: 'Password',
                   obscureText: true,
                   validator: (value) =>
                       ValidationHelper.validateNotEmpty(value, 'Password'),
