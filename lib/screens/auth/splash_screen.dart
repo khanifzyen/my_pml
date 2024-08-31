@@ -18,7 +18,7 @@ class SplashScreenState extends ConsumerState<SplashScreen> {
   }
 
   Future<void> _checkSession() async {
-    // await Future.delayed(const Duration(seconds: 2)); // Simulate loading
+    await Future.delayed(const Duration(seconds: 2)); // Simulate loading
     final authState = ref.read(authProvider);
     if (authState.value != null) {
       context.go('/dashboard');
@@ -34,7 +34,8 @@ class SplashScreenState extends ConsumerState<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/logo.png', width: 150, height: 150),
+            Image.asset('assets/images/logo-nginepin.png',
+                width: 150, height: 150),
             const SizedBox(height: 24),
             const CircularProgressIndicator(),
           ],
