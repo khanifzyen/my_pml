@@ -16,13 +16,13 @@ class AuthService implements IAuthService {
 
   @override
   Future<Result<void>> createAccount(
-      {required String email, required String password}) async {
+      {required String email, required String password, String? name}) async {
     try {
       await _account.create(
-          userId: 'unique()', email: email, password: password);
+          userId: 'unique()', email: email, password: password, name: name);
       return const Result.success(null);
-    } catch (e) {
-      return Result.failed(e.toString());
+    } on AppwriteException catch (e) {
+      return Result.failed(e.message.toString());
     }
   }
 
@@ -35,8 +35,8 @@ class AuthService implements IAuthService {
       // Assuming we can get user details from the session
       final user = User(id: session.$id, email: email);
       return Result.success(user);
-    } catch (e) {
-      return Result.failed(e.toString());
+    } on AppwriteException catch (e) {
+      return Result.failed(e.message.toString());
     }
   }
 
@@ -45,8 +45,8 @@ class AuthService implements IAuthService {
     try {
       await _account.deleteSession(sessionId: 'current');
       return const Result.success(null);
-    } catch (e) {
-      return Result.failed(e.toString());
+    } on AppwriteException catch (e) {
+      return Result.failed(e.message.toString());
     }
   }
 }

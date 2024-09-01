@@ -23,17 +23,19 @@ class Auth extends _$Auth {
       state = AsyncValue.data(result.resultValue);
     } else {
       state = AsyncValue.error(result.errorMessage!, StackTrace.current);
+      resetState();
     }
   }
 
-  Future<void> register(String email, String password, String text) async {
+  Future<void> register(String email, String password, String name) async {
     state = const AsyncValue.loading();
-    final result =
-        await _authService.createAccount(email: email, password: password);
+    final result = await _authService.createAccount(
+        email: email, password: password, name: name);
     if (result.isSuccess) {
       await login(email, password);
     } else {
       state = AsyncValue.error(result.errorMessage!, StackTrace.current);
+      resetState();
     }
   }
 
@@ -44,6 +46,13 @@ class Auth extends _$Auth {
       state = const AsyncValue.data(null);
     } else {
       state = AsyncValue.error(result.errorMessage!, StackTrace.current);
+      resetState();
     }
+  }
+
+  void resetState() async {
+    Future.delayed(const Duration(seconds: 1), () {
+      state = const AsyncValue.data(null);
+    });
   }
 }

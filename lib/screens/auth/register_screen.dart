@@ -2,19 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../providers/auth_provider.dart';
+import '../../utils/build_context_extension.dart';
+import '../../utils/validation_helper.dart';
+import '../../widgets/custom_text_field.dart';
 
-class RegisterScreen extends ConsumerWidget {
-  RegisterScreen({super.key});
+class RegisterScreen extends ConsumerStatefulWidget {
+  const RegisterScreen({super.key});
 
+  @override
+  ConsumerState<RegisterScreen> createState() => _RegisterScreenState();
+}
+
+class _RegisterScreenState extends ConsumerState<RegisterScreen> {
+  final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _nameController = TextEditingController();
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    _nameController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final authState = ref.watch(authProvider);
     ref.listen<AsyncValue>(authProvider, (_, state) {
       if (state.value != null) {
         context.go('/dashboard');
+      } else if (state.hasError) {
+        context.showSnackBar('Login failed: ${state.error}', Status.error);
       }
     });
 
@@ -23,50 +43,61 @@ class RegisterScreen extends ConsumerWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextField(
-                controller: _nameController,
-                decoration: const InputDecoration(
+          child: Form(
+            key: _formKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                CustomTextFormField(
+                  controller: _nameController,
                   labelText: 'Name',
-                  border: OutlineInputBorder(),
+                  validator: (value) =>
+                      ValidationHelper.validateNotEmpty(value, 'Name'),
                 ),
-              ),
-              const SizedBox(height: 16),
-              TextField(
-                controller: _emailController,
-                decoration: const InputDecoration(
+                const SizedBox(height: 16),
+                CustomTextFormField(
+                  controller: _emailController,
                   labelText: 'Email',
-                  border: OutlineInputBorder(),
+                  keyboardType: TextInputType.emailAddress,
+                  validator: (value) => ValidationHelper.validateEmail(value),
                 ),
-                keyboardType: TextInputType.emailAddress,
-              ),
-              const SizedBox(height: 16),
-              TextField(
-                controller: _passwordController,
-                decoration: const InputDecoration(
+                const SizedBox(height: 16),
+                CustomTextFormField(
+                  controller: _passwordController,
                   labelText: 'Password',
-                  border: OutlineInputBorder(),
+                  obscureText: true,
+                  validator: (value) =>
+                      ValidationHelper.validateNotEmpty(value, 'Password'),
                 ),
-                obscureText: true,
-              ),
-              const SizedBox(height: 24),
-              ElevatedButton(
-                onPressed: () {
-                  ref.read(authProvider.notifier).register(
-                        _emailController.text,
-                        _passwordController.text,
-                        _nameController.text,
-                      );
-                },
-                child: const Text('Register'),
-              ),
-              TextButton(
-                onPressed: () => context.go('/login'),
-                child: const Text('Already have an account? Login'),
-              ),
-            ],
+                const SizedBox(height: 24),
+                ElevatedButton(
+                  onPressed: authState.isLoading
+                      ? null
+                      : () {
+                          if (_formKey.currentState!.validate()) {
+                            _formKey.currentState!.save();
+                            ref.read(authProvider.notifier).register(
+                                  _emailController.text,
+                                  _passwordController.text,
+                                  _nameController.text,
+                                );
+                          }
+                        },
+                  child: authState.isLoading
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(),
+                        )
+                      : const Text('Register'),
+                ),
+                TextButton(
+                  onPressed: () => context.go('/login'),
+                  child: const Text('Already have an account? Login'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
