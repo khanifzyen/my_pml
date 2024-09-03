@@ -18,7 +18,7 @@ class SplashScreenState extends ConsumerState<SplashScreen> {
   }
 
   Future<void> _checkSession() async {
-    // await Future.delayed(const Duration(seconds: 2)); // Simulate loading
+    await Future.delayed(const Duration(seconds: 1)); // Simulate loading
     final authState = ref.read(authProvider);
     if (authState.value != null) {
       context.go('/dashboard');

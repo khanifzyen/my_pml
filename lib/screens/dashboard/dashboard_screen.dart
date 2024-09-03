@@ -1,7 +1,7 @@
+import 'package:appwrite/models.dart' as models;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../../models/user_model.dart';
 import '../../models/user_profile_model.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/user_profile_provider.dart';
@@ -37,14 +37,14 @@ class DashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDashboardContent(BuildContext context, User user,
+  Widget _buildDashboardContent(BuildContext context, models.User user,
       AsyncValue<UserProfile?> userProfileState) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Welcome, ${user.name ?? 'User'}!',
+          Text('Welcome, ${user.name}!',
               style: Theme.of(context).textTheme.headlineMedium),
           const SizedBox(height: 24),
           const Text('Your Profile:',

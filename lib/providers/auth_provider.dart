@@ -1,6 +1,6 @@
+import 'package:appwrite/models.dart' as models;
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../services/auth_service.dart';
-import '../models/user_model.dart';
 import '../utils/provider.dart';
 
 part 'auth_provider.g.dart';
@@ -11,9 +11,8 @@ class Auth extends _$Auth {
       AuthService(account: ref.read(appwriteAccountProvider));
 
   @override
-  Future<User?> build() async {
-    // TODO: Check if user is already logged in and return User object
-    return null;
+  Future<models.User?> build() async {
+    return checkSession();
   }
 
   Future<void> login(String email, String password) async {
@@ -54,5 +53,26 @@ class Auth extends _$Auth {
     Future.delayed(const Duration(seconds: 1), () {
       state = const AsyncValue.data(null);
     });
+  }
+
+  Future<models.User?> checkSession() async {
+    try {
+      // Get the current session
+      final sessionResult = await _authService.getCurrentSession();
+
+      if (sessionResult.isSuccess) {
+        // If there's an active session, fetch the user details
+        final userResult = await _authService.getCurrentUser();
+        if (userResult.isSuccess) {
+          return userResult.resultValue; // Return the user directly from build
+        }
+      }
+    } catch (e) {
+      // Handle any errors (e.g., network issues, session expired)
+      print('Error checking session: $e');
+    }
+
+    // Return null if there's no active session or if an error occurred
+    return null;
   }
 }
