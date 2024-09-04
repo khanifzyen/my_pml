@@ -33,7 +33,7 @@ class AuthService implements IAuthService {
   Future<Result<models.User>> login(
       {required String email, required String password}) async {
     try {
-      final session = await _account.createEmailPasswordSession(
+      await _account.createEmailPasswordSession(
           email: email, password: password);
       // Assuming we can get user details from the session
       final user = await _account.get();

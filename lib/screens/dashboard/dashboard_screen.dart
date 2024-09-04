@@ -42,7 +42,7 @@ class DashboardScreen extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text('Welcome, ${user.name}!',
               style: Theme.of(context).textTheme.headlineMedium),
@@ -59,7 +59,7 @@ class DashboardScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 24),
           ElevatedButton(
-            onPressed: () => context.go('/profile'),
+            onPressed: () => context.push('/profile'),
             child: const Text('Edit Profile'),
           ),
         ],
